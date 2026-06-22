@@ -20,7 +20,7 @@
 
 9. Provide download link
 
-10. ## Marks Based Answer Rules
+ ## Marks Based Answer Rules
 
 2 Marks:
 - Definition
@@ -58,7 +58,7 @@
 7. Use point-wise answers.
 8. Mention insufficient information if notes do not contain enough content.
 
-9. Subject Name
+ Subject Name
 
 Question 1
 
@@ -94,3 +94,75 @@ The system should combine relevant information from different sections of the up
 When relevant diagrams exist in uploaded notes, include them in the generated PDF along with the explanation.
 
 If the uploaded material does not contain enough information to answer a question, the system must explicitly state that insufficient information is available rather than generating unsupported content.
+
+## AI Processing Pipeline
+
+1. Upload Notes PDF
+2. Upload Module PDF
+3. Upload Question Bank PDF
+
+4. Extract text from uploaded files
+
+5. Split content into searchable sections
+
+6. Extract questions from question bank
+
+7. For each question:
+   - Find relevant content from notes/modules
+   - Collect all matching sections
+   - Generate structured answer
+
+8. Validate answer quality
+
+9. Generate final PDF
+
+10. Allow download
+
+ ## Answer Templates
+
+### Definition Questions
+- Definition
+- Key Points
+
+### Explain Questions
+- Introduction
+- Explanation
+- Example
+- Conclusion
+
+### Advantages and Disadvantages Questions
+- Introduction
+- Advantages
+- Disadvantages
+- Conclusion
+
+### Compare Questions
+- Introduction
+- Comparison Table
+- Key Differences
+- Conclusion
+
+## Quality Validation
+
+Before finalizing an answer:
+
+- Content came from uploaded material
+- Answer matches mark allocation
+- Headings are present
+- Grammar is correct
+- No unexplained abbreviations
+- No unsupported information
+- Answer is complete
+
+- ## Future Enhancement
+
+Professor Mode:
+
+- Definition
+- Diagram
+- Explanation
+- Advantages
+- Applications
+- Conclusion
+
+Generate answers in the format commonly expected by university examiners.
